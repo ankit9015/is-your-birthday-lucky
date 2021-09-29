@@ -1,5 +1,5 @@
 :root {
-    --background-color: rgb(45, 89, 139);
+    --background-color:#acd3f2;
     --background-second: rgb(223, 217, 217);
     --black: black;
     --outline-color: rgb(127, 165, 236);
@@ -63,17 +63,17 @@ footer p {
     font-weight: bold;
 }
   
-.footer-list {
-    margin: 1rem;
-}
+
   
 a,
 img,
 li {
+    color: white;
     display: inline;
 }
   
 img {
-    width: 40px;
+    width: 30px;
+    height: 30px;
     padding: 0.2rem;
 }

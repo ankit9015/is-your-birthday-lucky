@@ -37,3 +37,7 @@ function checkNumberHandler () {
 };
 
 checkButton.addEventListener("click", checkNumberHandler);
+
+function privacyFunction() {
+    alert("Privacy Notice: This site does not store your data");
+}
