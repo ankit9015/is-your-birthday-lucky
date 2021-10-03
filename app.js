@@ -28,12 +28,17 @@ function compareValues (sum, numToCheck) {
 function checkNumberHandler () {
     const dateValue = dob.value;
     const numToCheck = luckyNumber.value;
-    if (dateValue && numToCheck) {
-        const sum = calculateSum(dateValue);
-        compareValues(sum, numToCheck);
+    if (Number(numToCheck) > 0) {
+        if (dateValue && numToCheck) {
+            const sum = calculateSum(dateValue);
+            compareValues(sum, numToCheck);
+        } else {
+            giveMessage("Please enter valid Date of Birth and Lucky Number");
+        }   
     } else {
-        giveMessage("Please enter valid Date of Birth and Lucky Number");
-    }    
+        giveMessage("Lucky number can not be negative, zero, or empty")
+    }
+     
 };
 
 checkButton.addEventListener("click", checkNumberHandler);
