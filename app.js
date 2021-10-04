@@ -3,6 +3,15 @@ const luckyNumber = document.querySelector("#lucky-number");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#message");
 
+
+function privacyFunction() {
+    alert("Privacy Notice: This site does not store your data");
+}
+
+setTimeout(privacyFunction, 3000);
+
+
+
 function calculateSum (dateValue) {
     dateValue = dateValue.replaceAll("-", "");
     let sum = 0;
@@ -43,6 +52,3 @@ function checkNumberHandler () {
 
 checkButton.addEventListener("click", checkNumberHandler);
 
-function privacyFunction() {
-    alert("Privacy Notice: This site does not store your data");
-}
